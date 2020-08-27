@@ -25,8 +25,8 @@ app.use(express.static(public_dir_path));
 
 app.get('',(req,res)=>{
     res.render('index',{
-        title: 'weather',
-        name: 'mayor'
+        title: 'Weather',
+        name: 'Mayor'
 
     });
 })
@@ -34,8 +34,8 @@ app.get('',(req,res)=>{
 app.get('/about',(req,res)=>{
 
     res.render('about',{
-        title : 'about me',
-        name : 'mayor'
+        title : 'About me',
+        name : 'J.D.D Mayor'
 
     });
 
@@ -45,8 +45,8 @@ app.get('/help',(req,res)=>{
 
         res.render('help',{
             message:'help help hep!!',
-            title : 'helpss',
-            name : 'mayor jay'
+            title : 'Helpss',
+            name : 'J.D.D Mayor'
         })
 
 
@@ -93,7 +93,7 @@ app.get('/weather',(req,res)=>{
 app.get('/help/*',(req,res)=>{
 
     res.render('error',{
-        name : 'mayor',
+        name : 'J.D.D Mayor',
         title : '404',
         error : 'help article not found'
     })
@@ -103,7 +103,7 @@ app.get('/help/*',(req,res)=>{
 
 app.get('*',(req,res)=>{
     res.render('error',{
-        name : 'mayor',
+        name : 'J.D.D Mayor',
         title : '404',
         error : 'page not found'
     })

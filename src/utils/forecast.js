@@ -13,7 +13,7 @@ const forecast=(latitude,longitude,callback)=>{
             callback('unable to find the location',undefined)
         }
         else{
-            callback(undefined,body.current.weather_descriptions[0]+'.current temperature : ' +body.current.temperature+'. feels like : ' +body.current.feelslike)
+            callback(undefined,body.current.weather_descriptions[0]+'.current temperature : ' +body.current.temperature+'. feels like : ' +body.current.feelslike+'. Humidity: '+body.current.humidity+'. UV-index:'+body.current.uv_index)
         }
     })
 }
